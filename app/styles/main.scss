@@ -18,6 +18,19 @@ body {
   padding-bottom: 20px;
 }
 
+p {
+  color: #fff;
+}
+
+a {
+  color: #eb4961;
+}
+
+.footer a:hover, .footer a:active, .footer a:visited {
+  color: #eb4961;
+  text-decoration: underline;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -28,7 +41,6 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
 
   /* Make the masthead heading the same height as the navigation */
   h3 {
@@ -39,25 +51,57 @@ body {
   }
 }
 
+.h2, h2 {
+    font-size: 38px;
+    color: #fff;
+    padding: 0 15px;
+}
+
+.h4, h4 {
+    font-size: 24px;
+    color: #fff;
+    margin: 15px 0;
+}
+
 /* Custom page footer */
 .footer {
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
 }
 
 .container-narrow > hr {
   margin: 30px 0;
 }
 
+.inspec {
+  margin-top:3em;
+}
+
 /* Main marketing message and sign up button */
 .jumbotron {
+  background-color: #000;
+  border: none;
+  padding: 0;
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+
   .btn {
+    background-color: #eb4961;
+    border: none;
     font-size: 21px;
     padding: 14px 24px;
+    vertical-align: middle;
   }
+
+  .btn-success.active.focus, .btn-success.active:focus, .btn-success.active:hover, .btn-success:active.focus, .btn-success:active:focus, .btn-success:active:hover, .open>.btn-success.dropdown-toggle.focus, .open>.btn-success.dropdown-toggle:focus, .open>.btn-success.dropdown-toggle:hover, .btn-success.active.focus, .btn-success.active:focus, .btn-success.active:hover, .btn-success:active.focus, .btn-success:active:focus, .btn-success:active:hover, .open>.btn-success.dropdown-toggle.focus, .open>.btn-success.dropdown-toggle:focus, .open>.btn-success.dropdown-toggle:hover {
+    color: #fff;
+    background-color: #ff6d83;
+    border: none;
+}
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* Supporting marketing content */
@@ -66,6 +110,11 @@ body {
   p + h4 {
     margin-top: 28px;
   }
+}
+
+img {
+  margin: 0;
+  padding: 0;
 }
 
 /* Responsive: Portrait tablets and up */
